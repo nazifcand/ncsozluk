@@ -1,0 +1,143 @@
+{
+  "users": [
+    {
+      "username": "Paxeraon",
+      "slug": "paxeraon",
+      "mail": "paxeraon@deneme.com",
+      "pass": "123456",
+      "fakeToken": "1612055807238.KEY.1612055807238",
+      "id": 1
+    },
+    {
+      "username": "Armmy",
+      "slug": "armmy",
+      "mail": "armyy@deneme.com",
+      "pass": "22662266",
+      "fakeToken": "xxxx.KEY.xxxx",
+      "id": 2
+    }
+  ],
+  "entries": [
+    {
+      "id": 1,
+      "title": "Xiaomi telefonlar için gizli kod ne işe yarıyor?",
+      "slug": "xiaomi-telefonlar-icin-gizli-kod-ne-ise-yariyor",
+      "entry": "Son zamanlarda Xiaomi markalı akıllı telefonların kullanıcı sayısı ve firmanın telefonlarına olan ilgi oldukça arttı. Özelleştirme kısmında ise her telefonda olduğu gibi Xiaomi’nin ürettiği cihazlarında bilinmeyen bazı yönleri ve gizli kodları var.",
+      "date": 1612116802854,
+      "parentEntry": 0,
+      "author": 1,
+      "like": 23,
+      "dislike": -41
+    },
+    {
+      "id": 2,
+      "title": "SDN ofisinde kendi maskemizi tasarladık!",
+      "slug": "sdn-ofisinde-kendi-maskemizi-tasarladik",
+      "entry": "ShiftDelete.Net ailesi olarak inceleme ve konu anlatımlarının yanı sıra farklı videolarla karşınıza çıkmaya devam ediyoruz. Koronavirüs salgını nedeniyle maskeler hayatımızın vazgeçilmez bir parçası haline geldi. Bizde bu videoda Bluemask’ın sunduğu hizmetten faydalanarak kendi maskemizi tasarladık.",
+      "date": 1612116802854,
+      "parentEntry": 0,
+      "author": 2,
+      "like": 0,
+      "dislike": 0
+    },
+    {
+      "id": 3,
+      "entry": "Bende örnek bir kod vereyim bknz: #06*#",
+      "date": 1612116802854,
+      "parentEntry": 1,
+      "author": 2,
+      "like": 0,
+      "dislike": 0
+    },
+    {
+      "date": 1612125125409,
+      "author": 1,
+      "entry": "deneme kod ekliyim",
+      "parentEntry": 1,
+      "like": 0,
+      "dislike": 0,
+      "id": 4
+    },
+    {
+      "date": 1612125196236,
+      "author": 1,
+      "entry": "sadlö sla dad as d\n",
+      "parentEntry": 1,
+      "like": 0,
+      "dislike": 0,
+      "id": 5
+    },
+    {
+      "date": 1612125246779,
+      "author": 1,
+      "entry": "kmdfksdmfks mdfkmdsfk sf ",
+      "parentEntry": 1,
+      "like": 0,
+      "dislike": 0,
+      "id": 6
+    },
+    {
+      "date": 1612125251292,
+      "author": 1,
+      "entry": "kmdfksdmfks mdfkmdsfk sf ",
+      "parentEntry": 1,
+      "like": 0,
+      "dislike": 0,
+      "id": 7
+    },
+    {
+      "date": 1612125441712,
+      "author": 2,
+      "entry": "selam, sdn ailesi.",
+      "parentEntry": 2,
+      "like": 0,
+      "dislike": 0,
+      "id": 8
+    },
+    {
+      "date": 1612125499235,
+      "author": 2,
+      "entry": "deneme",
+      "parentEntry": 2,
+      "like": 0,
+      "dislike": 0,
+      "id": 9
+    },
+    {
+      "date": 1612125516979,
+      "author": 2,
+      "entry": "asasasas",
+      "parentEntry": 2,
+      "like": 0,
+      "dislike": 0,
+      "id": 10
+    },
+    {
+      "date": 1612125527510,
+      "author": 2,
+      "entry": "nkansjdnajsd",
+      "parentEntry": 2,
+      "like": 0,
+      "dislike": 0,
+      "id": 11
+    },
+    {
+      "date": 1612125557498,
+      "author": 2,
+      "entry": "selam, paxeraon",
+      "parentEntry": 1,
+      "like": 0,
+      "dislike": 0,
+      "id": 12
+    },
+    {
+      "date": 1612125600012,
+      "author": 1,
+      "entry": "hani bizim sevdamız?",
+      "parentEntry": 1,
+      "like": 0,
+      "dislike": 0,
+      "id": 13
+    }
+  ]
+}
