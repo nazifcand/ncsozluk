@@ -1,23 +1,15 @@
-# sozluk-clone
+# vue-vuex-blog
 
-## Project setup
+VueJS 3 & Vuex blog example
 
-```
-npm install
-```
+## Install
 
-### Compiles and hot-reloads for development
+        npm install
 
-```
-npm run serve
-```
+        json-server --watch /API/database.json
 
-### Compiles and minifies for production
+        npm run serve
 
-```
-npm run build
-```
+## Screenshot
 
-### Customize configuration
-
-See [Configuration Reference](https://cli.vuejs.org/config/).
+![Home](https://i.hizliresim.com/VAlrVE.png)
