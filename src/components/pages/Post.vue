@@ -10,11 +10,11 @@
       <p>{{ singleEntry.entry }}</p>
       <div class="entry-details">
         <div class="votes" v-if="$store.state.isLoggedIn">
-          <div class="increase">
+          <div class="increase" @click="like(singleEntry)">
             <span>{{ singleEntry.like }}</span>
             <i class="fas fa-arrow-up"></i>
           </div>
-          <div class="decrease">
+          <div class="decrease" @click="dislike(singleEntry)">
             <span>{{ singleEntry.dislike }}</span>
             <i class="fas fa-arrow-down"></i>
           </div>
@@ -44,11 +44,11 @@
       <p>{{ comment.entry }}</p>
       <div class="entry-details">
         <div class="votes" v-if="$store.state.isLoggedIn">
-          <div class="increase">
+          <div class="increase" @click="like(comment)">
             <span>{{ comment.like }}</span>
             <i class="fas fa-arrow-up"></i>
           </div>
-          <div class="decrease">
+          <div class="decrease" @click="dislike(comment)">
             <span>{{ comment.dislike }}</span>
             <i class="fas fa-arrow-down"></i>
           </div>
@@ -147,6 +147,7 @@
 import NewEntry from '@/components/NewEntry.vue';
 import { mapState } from 'vuex';
 import moment from 'moment';
+import axios from 'axios';
 
 export default {
   components: { NewEntry },
@@ -162,9 +163,43 @@ export default {
     fetchSingleEntry() {
       this.$store.dispatch('fetchSingleEntry', { slug: this.$route.params.slug });
     },
+
     formatCreatedDate(date) {
       return moment(date).format('MMMM Do YYYY, h:mm:ss a');
+    },
+
+    like(entry) {
+      const editEntry = {
+        title: entry.title ? entry.title : null,
+        slug: entry.slug ? entry.slug : null,
+        entry: entry.entry,
+        date: Date.now(),
+        author: entry.author.id,
+        like: ++entry.like,
+        dislike: entry.dislike,
+        parentEntry: entry.parentEntry
+      }
+      axios.put(`/entries/${entry.id}`, editEntry)
+        .then(res => this.fetchSingleEntry())
+        .catch(err => console.log(err));
+    },
+
+    dislike(entry) {
+      const editEntry = {
+        title: entry.title ? entry.title : null,
+        slug: entry.slug ? entry.slug : null,
+        entry: entry.entry,
+        date: Date.now(),
+        author: entry.author.id,
+        like: entry.like,
+        dislike: --entry.dislike,
+        parentEntry: entry.parentEntry
+      }
+      axios.put(`/entries/${entry.id}`, editEntry)
+        .then(res => this.fetchSingleEntry())
+        .catch(err => console.log(err));
     }
+
   },
 
   watch: {
